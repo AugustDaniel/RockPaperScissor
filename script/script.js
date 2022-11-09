@@ -9,8 +9,11 @@ function getComputerTest() {
     else console.log("Scissor")     
 }
 
-function game(playerselection, computerselection) {
-    computerselection = getComputerTest();
-    x = playerselection
-    
-}
+function game(playerselection, computerselection = getComputerTest()) {
+    if (playerselection = "rock" && computerselection == "Scissor") {
+            console.log("You Win");
+    } else if (playerselection = "paper" && computerselection == "Rock") {
+            console.log("You Win");
+    }  else if (playerselection = "scissor" && computerselection == "Paper") {
+            console.log("You Win");
+    } else console.log("You Lose");
